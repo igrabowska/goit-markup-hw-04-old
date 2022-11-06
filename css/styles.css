@@ -333,6 +333,11 @@ margin-bottom: 30px;}
   fill: var(--main-background);
 }
 
+.social-icon-link-card {
+  display:flex;
+ flex-direction: row;
+}
+
 .container-social-icons {
   display: flex;
   align-content: center;
