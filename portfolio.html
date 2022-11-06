@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
+  </head>
+
+  <body>
+    <header class="top-navigation-bar">
+      <div class="container">
+        <div class="sub-container-top-nav-bar">
+          <div class="header-wrapper">
+            <a class="logo-header" href="index.html"
+              ><span class="logo-blue-color">Web</span>Studio</a
+            >
+            <div class="menu-wrapper">
+              <nav class="menu">
+                <ul class="ul-list">
+                  <li><a href="./index.html">Agencja</a></li>
+                  <li><a href="./portfolio.html">Portfolio</a></li>
+                  <li>Kontakt</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <ul class="ul-list contact-list-header">
+            <li>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="#">+48 111 111 111</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav class="section">
+        <!--Przyciski filtrujące-->
+        <ul class="ul-list portfolio-buttons">
+          <li>
+            <button
+              type="button"
+              class="portfolio-button-all portfolio-buttons"
+            >
+              Wszystkie
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="portfolio-button-websites portfolio-buttons"
+            >
+              Strony
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="portfolio-button-app portfolio-buttons"
+            >
+              Aplikacje
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="portfolio-button-design portfolio-buttons"
+            >
+              Design
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="portfolio-button-marketing portfolio-buttons"
+            >
+              Marketing
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Galeria zdjęć projektów-->
+      <section class="section no-top-padding">
+        <div class="container">
+          <ul class="all-projects ul-list">
+            <li>
+              <!-- <div class="project-details">  -->
+              <figure class="single-project project-details">
+                <img
+                  src="images/Technocrack-www.jpg"
+                  alt="Zdjęcie projektu strony internetowej"
+                  width="370"
+                  height="294"
+                />
+                <figcaption class="underline">
+                  <h3 class="portfolio-project-title">Technocrack</h3>
+                  <p class="portfolio-project-category">Strona internetowa</p>
+                </figcaption>
+              </figure>
+              <!-- </div> -->
+            </li>
+            <li>
+              <!-- <div class="project-details">  -->
+              <figure class="single-project project-details">
+                <img
+                  src="images/New-orlean-design.jpg"
+                  alt="Projekt grafiki New Orlean"
+                  width="370"
+                  height="294"
+                />
+
+                <figcaption>
+                  <h3 class="portfolio-project-title">
+                    Grafika New Orlean vs Golden Star
+                  </h3>
+                  <p class="portfolio-project-category">Design</p>
+                </figcaption>
+              </figure>
+              <!-- </div> -->
+            </li>
+            <li>
+              <figure class="single-project project-details">
+                <img
+                  src="images/Seafood-app.jpg"
+                  alt="Projekt aplikacji restauracji Seafood"
+                  width="370"
+                  height="294"
+                />
+                <figcaption class="underline">
+                  <h3 class="portfolio-project-title">Restauracja Seafood</h3>
+                  <p class="portfolio-project-category">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="single-project project-details">
+                <img
+                  src="images/Project-prime-marketing.jpg"
+                  alt="Zdjęcie słuchawek"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3 class="portfolio-project-title">Projekt Prime</h3>
+                  <p class="portfolio-project-category">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+
+            <li>
+              <figure class="single-project project-details">
+                <img
+                  src="images/Project-Boxes-app.jpg"
+                  alt="Zdjęcie pudełek"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3 class="portfolio-project-title">Projekt Boxes</h3>
+                  <p class="portfolio-project-category">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="single-project project-details">
+                <img
+                  src="images/Inspiration-www.jpg"
+                  alt="Strona internetowa Inspiration has no Borders wyświetlona na monitorze"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3 class="portfolio-project-title">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="portfolio-project-category">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="single-project project-details">
+                <img
+                  src="images/Magazine-design.jpg"
+                  alt="Otwarty katalog edycji limitowanej"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3 class="portfolio-project-title">
+                    Magazyn Limited Edition
+                  </h3>
+                  <p class="portfolio-project-category">Design</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="single-project project-details">
+                <img
+                  src="images/Project-lab-marketing.jpg"
+                  alt="Papierowa etykieta"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3 class="portfolio-project-title">Projekt LAB</h3>
+                  <p class="portfolio-project-category">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="single-project project-details">
+                <img
+                  src="images/Growing-business-app.jpg"
+                  alt="Laptop z otwartą stroną internetową"
+                  width="370"
+                  height="294"
+                />
+                <figcaption>
+                  <h3 class="portfolio-project-title">Growing Business</h3>
+                  <p class="portfolio-project-category">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="sub-container-footer">
+          <a class="logo-footer" href="index.html"
+            ><span class="logo-blue-color">Web</span>Studio</a
+          >
+
+          <address class="contact-list-footer">
+            <ul class="container-footer">
+              <li class="address-footer">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="e-mail-footer"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="#" class="ph-number-footer">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
