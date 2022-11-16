@@ -16,6 +16,10 @@ body {
   --main-background: #ffffff;
   --secondary-background: #f5f4fa;
   --baner-background-color: #2f303a;
+  --social-icons-backgroung-color-footer: rgba(255, 255, 255, 0.15);
+  /* --color1: #757575; */
+
+  --icons-grey: rgba(175, 177, 184, 1);
 }
 
 /* BEZ FLEXA! */
@@ -78,6 +82,7 @@ flex-wrap: wrap;} */
 
 .ul-list {
   list-style: none;
+  display: flex;
 }
 
 .menu a {
@@ -88,32 +93,51 @@ flex-wrap: wrap;} */
   color: var(--brand-color);
 }
 
-.header-email-container {
+/* .header-email-container {
   display: flex;
-  /* display: inline; */
-  flex-direction: row;
-}
-
-.envelope-icon {
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-.envelope-icon :hover {
-  color: var(--brand-color);
-}
-/* Dlaczego nie działa podswietlanie tel i koperty? */
-.icon-smartphone {
-  color: var(--text-color);
-  cursor: pointer;
-}
-.icon-smartphone:hover {
-  color: var(--brand-color);
-}
-/* .contact-list-header {
-  display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  margin-right: ;
 } */
+
+.icon-envelope {
+  width: 16px;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Celuje w svg aby calość zmienila kolor (ikonka i nr tel/ email) */
+.header-contact-list-email:hover > .icon-envelope {
+  --color1: var(--brand-color);
+}
+/* .icon-envelope:hover {
+  --color1: var(--brand-color);
+} */
+
+/* .header-phone-container {display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+} */
+
+.icon-smartphone {
+  width: 10px;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.header-contact-list-phone:hover > .icon-smartphone {
+  --text-color: var(--brand-color);
+}
+
+.contact-list-header {
+  display: flex;
+  gap: 30px;
+}
+
 .contact-list-header a {
   text-decoration: none;
   color: var(--text-color);
@@ -121,7 +145,6 @@ flex-wrap: wrap;} */
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  /* padding-left: 50px; */
 }
 .contact-list-header a:hover {
   color: #2196f3;
@@ -132,8 +155,12 @@ flex-wrap: wrap;} */
   flex-flow: column;
   justify-content: center;
   height: 600px;
-  background-color: var(--baner-background-color);
-  background-image: url("../images/hero-baner-photo.png");
+  /* background-color: var(--baner-background-color); */
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("../images/hero-baner-photo.png");
 }
 
 .container {
@@ -195,26 +222,30 @@ button {
   letter-spacing: 3%;
   cursor: pointer;
 } */
+
+/* svg {
+  /* fill: var(--brand-color); */
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .lorem-icon-container {
   width: 270px;
-  height:120px;
+  height: 120px;
   background-color: var(--secondary-background);
-display: flex;
-/* justify-content: center; */
-align-items: center;
-gap: 30px;
-margin-bottom: 30px;}
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
 
-
-.icon-antenna {
+/* .icon-antenna {
   background: var(--main-background);
   width: 65.32px;
   background-color: var(--secondary-background);
-}
+} */
 
 .service-description-list {
   /* width: calc((100%-90/4)); */
@@ -326,7 +357,7 @@ margin-bottom: 30px;}
   letter-spacing: 3%;
 }
 .social-icon-member-card {
-  fill: rgba(175, 177, 184, 1);
+  fill: var(--icons-grey);
 }
 
 .social-icon {
@@ -334,31 +365,61 @@ margin-bottom: 30px;}
 }
 
 .social-icon-link-card {
-  display:flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-.container-social-icons {
-  display: flex;
-  align-content: center;
-  width: 206px;
+.our-customers-header {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.social-list-item {
+.our-customers-list {
   display: flex;
-  display: inline;
+  align-items: center;
+  margin: 0, auto;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.social-list {
+.customer-logo {
   display: flex;
-  display: inline;
+  align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 170px;
+  height: 92px;
+  background-color: var(--main-background);
+  border: 1px solid var(--icons-grey);
+  border-radius: 4px;
+  fill: var(--icons-grey);
 }
+
+.customer-logo:hover {
+  fill: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+/*  div around <a with icon */
+/* .customer-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  background-color: var(--main-background);
+  border: 2px solid var(--icons-grey);
+  border-radius: 4px;
+}
+.customer-icon-wrapper:hover {
+  border-color: var(--brand-color);
+  fill: var(--brand-color);
+} */
+
 .footer-section {
   background-color: var(--baner-background-color);
   height: 252px;
@@ -368,26 +429,45 @@ margin-bottom: 30px;}
 .sub-container-footer {
   padding: 0 15px;
 }
-.container-footer-two-in-one {
+
+.footer-containers {
   display: flex;
 }
-
-/* .container-social-footer {
-  display: inline;
+/* .container-social-icons {
+  display: flex;
+  align-content: center;
 } */
-
+.container-social-footer {
+  width: 206px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.social-list-item {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  /* padding-right: 10px;
+  margin-right: 10px; */
+}
 .social-icon-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--social-icons-backgroung-color-footer);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-
-.social-icon-link :hover {
+.social-icon-link:hover {
   background-color: var(--brand-color);
 }
 
@@ -407,10 +487,9 @@ margin-bottom: 30px;}
   line-height: 1.19;
   text-decoration: none;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--main-background);
   width: 145px;
 }
-/* Pytania: 1. Dlaczego w stylizacji logo w tym miejscu po wstawieniu bialego koloru zdefiniowanego w :root, element Studio pozostaje niebieski, a po najechaniu myszką zmienia się na czerwony? ps. Ostatecznie musiałam wstawić kolor bialy z oznaczeniem #fffff */
 
 .contact-list-footer a {
   text-decoration: none;
@@ -428,8 +507,8 @@ margin-bottom: 30px;}
 .container-footer li {
   display: flex;
   margin-bottom: 9px;
-  width: 100%;
-  max-width: 1200px;
+  /* width: 100%;
+  max-width: 1200px; */
 }
 
 .address-footer {
