@@ -223,9 +223,6 @@ button {
   cursor: pointer;
 } */
 
-/* svg {
-  /* fill: var(--brand-color); */
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -311,17 +308,17 @@ button {
 
 .team-members-list {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 0 15px;
-  /* Czy ten padding jest potrzebny??Nie zauwazylam roznicy po jego usunieciu*/
+  /* padding: 0 15px; */
+  /* Czy ten padding jest potrzebny?? Nie zauwazylam roznicy po jego usunieciu*/
 }
 
-.team-memeber-business-card {
+.team-member-business-card {
   background-color: var(--main-background);
   width: 270px;
-  /* height: 368px; */
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
@@ -356,17 +353,77 @@ button {
   line-height: 1.19;
   letter-spacing: 3%;
 }
-.social-icon-member-card {
+
+/* klasa <svg na wizytowce - nadaje szary kolor ikonom ->update: przenioslam fill do klasy<ul*/
+/* .social-icon-member-card {
+  fill: var(--icons-grey);
+} */
+
+.team-members-list {
   fill: var(--icons-grey);
 }
 
-.social-icon {
+.container-social-icons {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  margin-top: 0px;
+}
+/* .container2-social-icons:hover a {
+  fill: var(--main-background);
+} */
+
+.social-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icons-grey);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-background);
+}
+
+.social-icon-wrapper:hover {
+  background-color: #2196f3;
+  /* fill: #ffffff; */
+}
+.social-icon-wrapper:hover a {
   fill: var(--main-background);
 }
 
 .social-icon-link-card {
+  fill: var(--icons-grey);
+}
+
+/* .social-icon-link-card:hover {
+  fill: var(--main-background);
+} */
+
+/* klasa <li */
+.card-social-icon-background {
+  /* width: 44px;
+  height: 44px;
+  border-radius: 50%; */
+  /* background-color: yellow; */
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon-link-card {
+  display: flex;
+  /* width: 44px;
+  height: 44px;
+  border-radius: 50%; */
+  /* background-color: var(--brand-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .our-customers-header {
@@ -399,12 +456,13 @@ button {
   fill: var(--icons-grey);
 }
 
-.customer-logo:hover {
+.customer-logo:hover,
+.customer-logo:focus {
   fill: var(--brand-color);
   border-color: var(--brand-color);
 }
 
-/*  div around <a with icon */
+/*  div around <a with icon - drugi sposob na zmiane koloru ramki wraz z svg po najechaniu - section Nasi klienci*/
 /* .customer-icon-wrapper {
   display: flex;
   align-items: center;
@@ -433,30 +491,47 @@ button {
 .footer-containers {
   display: flex;
 }
-/* .container-social-icons {
-  display: flex;
-  align-content: center;
-} */
+
+.footer__container-social-icon {
+  gap: 10px;
+}
+
 .container-social-footer {
   width: 206px;
   height: 80px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
+  padding-left: 70px;
+  padding-top: 72px;
 }
-.social-list-item {
-  display: flex;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
+/* klasa <svg w footerze nadajaca biale obramowania ikonom */
+.social-icon {
+  fill: var(--main-background);
 }
+
+/* footer */
+
+/* ul w footerze */
 .social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  gap: 10px;
   /* padding-right: 10px;
   margin-right: 10px; */
 }
+/* klasa <li w footerze */
+.social-list-item {
+  display: flex;
+  justify-content: center;
+  /* width: 44px;
+  height: 44px; */
+}
+/* klasa <a wewnatrz listy linkow do sociali */
 .social-icon-link {
   width: 44px;
   height: 44px;
