@@ -338,6 +338,8 @@ button {
   Update:6/11: Padding-block 30px dodalam do klasy container-memeber-info; pozostawiajac padding 10px jedynie w team-member-name.
   oplatam div z klasa container-memener-info pozostale wizytowki.
   usunelam height wizytowki (.team-member-business-card). 
+
+  Upadate:17/11: duza przerwa miedzy ikonami social-media a reszta tekstu - jak sie jej pozbyc?
   */
 }
 
@@ -372,9 +374,6 @@ button {
   padding-top: 20px;
   margin-top: 0px;
 }
-/* .container2-social-icons:hover a {
-  fill: var(--main-background);
-} */
 
 .social-icon-wrapper {
   display: flex;
@@ -403,7 +402,7 @@ button {
   fill: var(--main-background);
 } */
 
-/* klasa <li */
+/* Opis: klasa <li */
 .card-social-icon-background {
   /* width: 44px;
   height: 44px;
